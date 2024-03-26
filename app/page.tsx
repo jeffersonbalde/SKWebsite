@@ -1,7 +1,11 @@
+import Chairwoman from "@/components/chairwoman/Chairwoman";
+import Hero from "@/components/hero/Hero";
+
 export default function Home() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <div>
+      <Hero />
+      <Chairwoman />
+    </div>
+  );
 }

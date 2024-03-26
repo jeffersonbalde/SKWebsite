@@ -13,9 +13,9 @@ const Navbar = () => {
   const handleClick = () => {
     setopenMenu(!openMenu);
   };
-
+  // backdrop-filter bg-opacity-30 backdrop-blur-lg border-b border border-gray-200
   return (
-    <div className="w-full text-color-black-grey fixed bg-color-white-smoke backdrop-filter bg-opacity-30 backdrop-blur-lg border-b border border-gray-200 shadow-xl">
+    <div className="w-full text-color-black-grey fixed bg-color-white-smoke shadow-xl z-50 backdrop-filter bg-opacity-80 backdrop-blur-lg">
       <div className="flex items-center justify-between h-full w-full px-4 md:px-14">
         <Link href="/" className="flex items-center">
           <Image
@@ -33,7 +33,7 @@ const Navbar = () => {
             </h1>
           </div>
         </Link>
-        <nav className="hidden lg:flex text-base">
+        <nav className="hidden lg:flex text-base z-50">
           <Links />
           <Link
             href="/getintouch"
@@ -42,14 +42,14 @@ const Navbar = () => {
             Get In Touch
           </Link>
         </nav>
-        <div className="lg:hidden" onClick={handleClick}>
+        <div className="lg:hidden z-50" onClick={handleClick}>
           <MdMenu size={30} />
         </div>
       </div>
       <div
         className={
           openMenu
-            ? "fixed right-0 top-0 w-[65%] sm:hidden h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+            ? "fixed right-0 top-0 w-[65%] sm:hidden h-screen bg-[#ecf0f3] p-10 ease-in duration-500 z-50"
             : "fixed right-[-100%] top-0 p-10 ease-in duration-500"
         }
       >
