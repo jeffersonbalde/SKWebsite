@@ -105,14 +105,118 @@ const Council = () => {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="flex items-center justify-center px-10">
-          <div className="w-80 h-[30rem] flex flex-col shadow-2xl bg-slate-500 rounded-xl">
-            5
+        <SwiperSlide className="px-8">
+          <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center shadow-2xl bg-slate-50 rounded-lg">
+            <Image
+              src="/leandro.png"
+              alt="Leandro Rolloque"
+              width={500}
+              height={500}
+              className="w-96 h-[22rem]"
+            />
+            <div className="flex justify-center items-center flex-col">
+              <h1 className="text-color-dark-blue text-2xl font-bold">
+                Leandro Rolloque
+              </h1>
+              <h1 className="text-color-dark-blue font-medium text-lg">
+                SK Kagawad
+              </h1>
+            </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="flex items-center justify-center px-10">
-          <div className="w-80 h-[30rem] flex flex-col shadow-2xl bg-slate-500 rounded-xl">
-            6
+        <SwiperSlide className="px-8">
+          <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center shadow-2xl bg-slate-50 rounded-lg">
+            <Image
+              src="/beri.png"
+              alt="Krizza Bautista"
+              width={500}
+              height={500}
+              className="w-96 h-[22rem]"
+            />
+            <div className="flex justify-center items-center flex-col">
+              <h1 className="text-color-dark-blue text-2xl font-bold">
+                Krizza Bautista
+              </h1>
+              <h1 className="text-color-dark-blue font-medium text-lg">
+                SK Kagawad
+              </h1>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="px-8">
+          <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center shadow-2xl bg-slate-50 rounded-lg">
+            <Image
+              src="/luna.png"
+              alt="Carlos John Luna"
+              width={500}
+              height={500}
+              className="w-96 h-[22rem]"
+            />
+            <div className="flex justify-center items-center flex-col">
+              <h1 className="text-color-dark-blue text-2xl font-bold">
+                Carlos John Luna
+              </h1>
+              <h1 className="text-color-dark-blue font-medium text-lg">
+                SK Kagawad
+              </h1>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="px-8">
+          <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center shadow-2xl bg-slate-50 rounded-lg">
+            <Image
+              src="/linao.png"
+              alt="Shane Linao"
+              width={500}
+              height={500}
+              className="w-96 h-[22rem]"
+            />
+            <div className="flex justify-center items-center flex-col">
+              <h1 className="text-color-dark-blue text-2xl font-bold">
+                Shane Linao
+              </h1>
+              <h1 className="text-color-dark-blue font-medium text-lg">
+                SK Kagawad
+              </h1>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="px-8">
+          <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center shadow-2xl bg-slate-50 rounded-lg">
+            <Image
+              src="/edgar.png"
+              alt="Edgar Boniel"
+              width={500}
+              height={500}
+              className="w-96 h-[22rem]"
+            />
+            <div className="flex justify-center items-center flex-col">
+              <h1 className="text-color-dark-blue text-2xl font-bold">
+                Edgar Boniel
+              </h1>
+              <h1 className="text-color-dark-blue font-medium text-lg">
+                SK Treasurer
+              </h1>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="px-8">
+          <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center shadow-2xl bg-slate-50 rounded-lg">
+            <Image
+              src="/joshua.png"
+              alt="Joshua Cabanes"
+              width={500}
+              height={500}
+              className="w-96 h-[22rem]"
+            />
+            <div className="flex justify-center items-center flex-col">
+              <h1 className="text-color-dark-blue text-2xl font-bold">
+                Joshua Cabanes
+              </h1>
+              <h1 className="text-color-dark-blue font-medium text-lg">
+                SK Secretary
+              </h1>
+            </div>
           </div>
         </SwiperSlide>
       </Swiper>
