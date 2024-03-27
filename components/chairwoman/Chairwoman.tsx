@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Chairwoman = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-between items-center w-[24rem] lg:w-[60rem] xl:w-[70rem] m-auto my-20 gap-9 lg:gap-14 px-8">
+    <div className="relative flex flex-col lg:flex-row justify-between items-center w-[24rem] lg:w-[60rem] xl:w-[70rem] m-auto my-20 gap-9 lg:gap-14 px-8">
       <div className="">
         <Image
           src="/dianaduran.png"
@@ -39,6 +39,14 @@ const Chairwoman = () => {
             Contact Us
           </button>
         </Link>
+      </div>
+      <div className="absolute bottom-9 -z-40 left-10 lg:left-[44rem] lg:bottom-24">
+        <Image
+          src="/philoverlay.png"
+          alt="philoverlay"
+          width={500}
+          height={500}
+        />
       </div>
     </div>
   );
