@@ -17,15 +17,28 @@ body {
 
 .hero-container,
 .council-container {
-  /* width: 100%; */
-  /* height: 100vh; */
   background-image: url("../public/herocontainer.png");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 
   color: var(--white);
+}
+
+.hero-container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.swiper_container {
+  height: 52rem;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.council-container {
+  /* max-width: 124rem;
+  padding: 4rem 1rem;
+  margin: 0 auto; */
 }
