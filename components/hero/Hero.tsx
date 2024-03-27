@@ -10,7 +10,7 @@ const Hero = () => {
             Barangay Lumbia
           </h1>
           <h1 className="font-bold text-5xl lg:text-7xl leading-snug italic">
-            SANGUNIANG KABATAAN
+            SANGGUNIANG KABATAAN
           </h1>
         </div>
       </div>

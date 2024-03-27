@@ -11,7 +11,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        color: { 'white-smoke': "#FAFAFA", 'black-grey': "#2C2C2C", 'blue': "#10A9DF" },
+        color: {
+          "white-smoke": "#FAFAFA",
+          "black-grey": "#2C2C2C",
+          "blue": "#10A9DF",
+          "dark-blue": "#0E1F58",
+        },
       },
     },
   },
