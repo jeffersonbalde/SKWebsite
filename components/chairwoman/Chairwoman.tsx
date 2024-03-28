@@ -55,8 +55,8 @@ const Chairwoman = () => {
         </h1>
         <div className="font-medium">
           <h2 className="text-base lg:text-lg leading-relaxed">
-            "A true leader does not create separation, A true leader brings
-            people together." - Tendai Ruben Mbofana
+            &quot;A true leader does not create separation, A true leader brings
+            people together.&quot; - Tendai Ruben Mbofana
           </h2>
         </div>
         <div className="">
