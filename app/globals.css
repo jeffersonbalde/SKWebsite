@@ -12,7 +12,6 @@
 
 body {
   background-color: var(--white);
-  height: 1000vh;
 }
 
 .hero-container,
@@ -29,16 +28,4 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.swiper_container {
-  height: 52rem;
-  padding: 2rem 0;
-  position: relative;
-}
-
-.council-container {
-  /* max-width: 124rem;
-  padding: 4rem 1rem;
-  margin: 0 auto; */
 }
