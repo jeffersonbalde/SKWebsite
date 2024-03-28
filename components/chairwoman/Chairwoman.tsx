@@ -1,10 +1,33 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
+
 const Chairwoman = () => {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+  const imgScroll1 = useTransform(scrollYProgress, [0, 1], ["20%", "-20%"]);
+  const imgScroll2 = useTransform(scrollYProgress, [0, 1], ["100%", "50%"]);
+
   return (
     <div className="relative flex flex-col lg:flex-row justify-between items-center w-[24rem] lg:w-[60rem] xl:w-[70rem] m-auto my-20 gap-9 lg:gap-14 px-8">
-      <div className="">
+      <motion.div
+        className=""
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: { delay: 0.4, duration: 0.7 },
+        }}
+        viewport={{ once: true }}
+        style={{ y: imgScroll1 }}
+      >
         <Image
           src="/dianaduran.png"
           alt="Diana Rose Duran"
@@ -12,8 +35,17 @@ const Chairwoman = () => {
           height={500}
           className="w-80 lg:w-[70rem]"
         />
-      </div>
-      <div className="flex flex-col gap-5 lg:gap-6 text-color-dark-blue">
+      </motion.div>
+      <motion.div
+        className="flex flex-col gap-5 lg:gap-6 text-color-dark-blue"
+        initial={{ opacity: 0, x: 20 }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: { delay: 0.6, duration: 0.9 },
+        }}
+        viewport={{ once: true }}
+      >
         <div className="flex items-center gap-4">
           <Image src="/line.svg" alt="line" width={50} height={50} />
           <h1 className="font-medium text-lg lg:text-xl">SK Chairwoman</h1>
@@ -35,19 +67,37 @@ const Chairwoman = () => {
           </h1>
         </div>
         <Link href="https://www.facebook.com/skbrgylumbia" className="mt-4">
-          <button className="bg-color-blue text-color-white-smoke font-medium py-3 px-6 rounded-sm lg:text-lg">
+          <motion.button
+            className="bg-color-blue text-color-white-smoke font-medium py-3 px-6 rounded-sm lg:text-lg transition-all ease-in-out hover:bg-white hover:text-color-dark-blue hover:shadow-2xl"
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: { delay: 0.7, duration: 1 },
+            }}
+            viewport={{ once: true }}
+          >
             Contact Us
-          </button>
+          </motion.button>
         </Link>
-      </div>
-      <div className="absolute bottom-9 -z-40 left-10 lg:left-[44rem] lg:bottom-24">
+      </motion.div>
+      <motion.div
+        className="absolute bottom-9 -z-40 left-10 lg:left-[44rem] lg:bottom-24"
+        initial={{ opacity: 0, x: 20 }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: { delay: 0.6, duration: 0.9 },
+        }}
+        viewport={{ once: true }}
+      >
         <Image
           src="/philoverlay.png"
           alt="philoverlay"
           width={500}
           height={500}
         />
-      </div>
+      </motion.div>
     </div>
   );
 };

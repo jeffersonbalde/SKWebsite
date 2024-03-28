@@ -7,6 +7,8 @@ import { MdMenu, MdClose } from "react-icons/md";
 import { BsFacebook } from "react-icons/bs";
 import { useState } from "react";
 
+import { motion, useScroll, useTransform } from "framer-motion";
+
 const Navbar = () => {
   const [openMenu, setopenMenu] = useState(false);
 
@@ -17,34 +19,77 @@ const Navbar = () => {
   return (
     <div className="w-full text-color-black-grey fixed bg-color-white-smoke shadow-xl z-50 backdrop-filter bg-opacity-80 backdrop-blur-lg">
       <div className="flex items-center justify-between h-full w-full px-4 md:px-14">
-        <Link href="/" className="flex items-center">
-          <Image
-            src="/sklogo.png"
-            alt="SK Lumbia Logo"
-            width={100}
-            height={100}
-          />
-          <div className="">
-            <h1 className="font-bold text-sm md:text-lg">
-              SANGUNIANG KABATAAN
-            </h1>
-            <h1 className="font-normal text-xs md:text-base">
-              Barangay Lumbia
-            </h1>
-          </div>
-        </Link>
-        <nav className="hidden lg:flex text-base z-50">
-          <Links />
-          <Link
-            href="/getintouch"
-            className="ml-14 bg-color-blue text-color-white-smoke px-3 py-2 rounded-sm"
-          >
-            Get In Touch
+        <motion.div
+          className=""
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { delay: 0.1, duration: 0.5 },
+          }}
+          viewport={{ once: true }}
+        >
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/sklogo.png"
+              alt="SK Lumbia Logo"
+              width={100}
+              height={100}
+            />
+            <div className="">
+              <h1 className="font-bold text-sm md:text-lg">
+                SANGUNIANG KABATAAN
+              </h1>
+              <h1 className="font-normal text-xs md:text-base">
+                Barangay Lumbia
+              </h1>
+            </div>
           </Link>
+        </motion.div>
+        <nav className="hidden lg:flex text-base z-50">
+          <motion.div
+            className=""
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: { delay: 0.2, duration: 0.5 },
+            }}
+            viewport={{ once: true }}
+          >
+            <Links />
+          </motion.div>
+          <motion.div
+            className=""
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: { delay: 0.2, duration: 0.5 },
+            }}
+            viewport={{ once: true }}
+          >
+            <Link
+              href="/getintouch"
+              className="ml-14 bg-color-blue text-color-white-smoke px-3 py-2 rounded-sm transition-all ease-in-out hover:bg-white hover:text-color-black-grey hover:shadow-2xl"
+            >
+              Get In Touch
+            </Link>
+          </motion.div>
         </nav>
-        <div className="lg:hidden z-50" onClick={handleClick}>
+        <motion.div
+          className="lg:hidden z-50"
+          onClick={handleClick}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { delay: 0.1, duration: 0.5 },
+          }}
+          viewport={{ once: true }}
+        >
           <MdMenu size={30} />
-        </div>
+        </motion.div>
       </div>
       <div
         className={
