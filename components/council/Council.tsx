@@ -14,6 +14,12 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 
 const Council = () => {
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index: number, className: string) {
+      return '<span class="' + className + '">' + (index + "") + "</span>";
+    },
+  };
   return (
     <div className="council-container h-screen w-full overflow-hidden bg-[##ffffff]">
       <motion.h1
@@ -47,13 +53,14 @@ const Council = () => {
           freeMode={true}
           pagination={{
             clickable: true,
-            // bulletClass: "custom-pagination-bullet"
+            // bulletClass: "custom-pagination-bullet",
           }}
+          // pagination={pagination}
           modules={[FreeMode, Pagination]}
           className="mt-12 w-[40rem] md:w-[67rem] mySwiper"
         >
           <SwiperSlide className="px-8">
-            <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center bg-slate-50 rounded-lg border border-slate-200">
+            <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center bg-slate-100 rounded-lg border border-slate-300">
               <Image
                 src="/diana.png"
                 alt="Diana Duran"
@@ -72,7 +79,7 @@ const Council = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="px-10">
-            <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center shadow-2xl bg-slate-50 rounded-lg">
+            <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center border border-slate-300 bg-slate-100 rounded-lg">
               <Image
                 src="/alao.png"
                 alt="Novem Rey Alao"
@@ -91,7 +98,7 @@ const Council = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="px-8">
-            <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center shadow-2xl bg-slate-50 rounded-lg">
+            <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center border border-slate-300 bg-slate-100 rounded-lg">
               <Image
                 src="/lawrence.png"
                 alt="Lawrence Lee Monsion"
@@ -110,7 +117,7 @@ const Council = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="px-8">
-            <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center shadow-2xl bg-slate-50 rounded-lg">
+            <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center border border-slate-300 bg-slate-100 rounded-lg">
               <Image
                 src="/jeff.png"
                 alt="Jefferson Balde"
@@ -129,7 +136,7 @@ const Council = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="px-8">
-            <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center shadow-2xl bg-slate-50 rounded-lg">
+            <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center border border-slate-300 bg-slate-100 rounded-lg">
               <Image
                 src="/leandro3.png"
                 alt="Leandro Rolloque"
@@ -148,7 +155,7 @@ const Council = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="px-8">
-            <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center shadow-2xl bg-slate-50 rounded-lg">
+            <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center border border-slate-300 bg-slate-100 rounded-lg">
               <Image
                 src="/beri.png"
                 alt="Krizza Bautista"
@@ -167,7 +174,7 @@ const Council = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="px-8">
-            <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center shadow-2xl bg-slate-50 rounded-lg">
+            <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center border border-slate-300 bg-slate-100 rounded-lg">
               <Image
                 src="/luna.png"
                 alt="Carlos John Luna"
@@ -186,7 +193,7 @@ const Council = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="px-8">
-            <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center shadow-2xl bg-slate-50 rounded-lg">
+            <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center border border-slate-300 bg-slate-100 rounded-lg">
               <Image
                 src="/shane.png"
                 alt="Shane Linao"
@@ -205,7 +212,7 @@ const Council = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="px-8">
-            <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center shadow-2xl bg-slate-50 rounded-lg">
+            <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center border border-slate-300 bg-slate-100 rounded-lg">
               <Image
                 src="/edgar.png"
                 alt="Edgar Boniel"
@@ -224,7 +231,7 @@ const Council = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="px-8">
-            <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center shadow-2xl bg-slate-50 rounded-lg">
+            <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center border border-slate-300 bg-slate-100 rounded-lg">
               <Image
                 src="/joshua.png"
                 alt="Joshua Cabanes"

@@ -16,7 +16,7 @@ const Chairwoman = () => {
   const imgScroll2 = useTransform(scrollYProgress, [0, 1], ["100%", "50%"]);
 
   return (
-    <div className="relative flex flex-col lg:flex-row justify-between items-center w-[24rem] lg:w-[60rem] xl:w-[70rem] m-auto my-20 gap-9 lg:gap-14 px-8">
+    <div className="relative flex flex-col lg:flex-row justify-between items-center w-[24rem] lg:w-[60rem] xl:w-[70rem] m-auto my-9 lg:my-20 gap-9 lg:gap-14 px-8">
       <motion.div
         className=""
         initial={{ opacity: 0, x: -20 }}

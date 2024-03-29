@@ -19,8 +19,9 @@ module.exports = {
         },
       },
       backgroundImage: {
-        'hero-pattern': "url('/herocontainer.png')",
-        'footer-texture': "url('/img/footer-texture.png')",
+        'valentines': "url('/valentines.jpg')",
+        'sk-training': "url('/sk-training.jpg')",
+        'variety-show': "url('/variety-show.jpg')",
       }
     },
   },
