@@ -67,7 +67,7 @@ const Chairwoman = () => {
           <h1 className="font-medium text-base lg:text-lg leading-relaxed">
             SK Chairwoman Diana Rose ‘Yan’ Duran, an esteemed advocate for the
             welfare of working people, has been an integral part of our
-            district's growth and development. Her tireless dedication to
+            district&apos;s growth and development. Her tireless dedication to
             serving the community has left an indelible mark on the lives of
             those she represents.
           </h1>

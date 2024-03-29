@@ -71,11 +71,11 @@ const Events = () => {
                     </h1>
                     <h1 className="font-medium z-50 text-base lg:text-2xl">
                       Our SK Council Takes Pride in Showcasing the Incredible
-                      Talents of Our Youth at Plaza Luz's Variety Show! From
+                      Talents of Our Youth at Plaza Luz&apos;s Variety Show! From
                       mesmerizing performances to awe-inspiring acts, our
                       diverse and talented young individuals shined brightly,
                       captivating hearts and minds, and leaving an indelible
-                      mark of success on our community's cultural landscape.
+                      mark of success on our community&apos;s cultural landscape.
                     </h1>
                   </div>
                 </SwiperSlide>
