@@ -18,6 +18,10 @@ module.exports = {
           "dark-blue": "#0E1F58",
         },
       },
+      backgroundImage: {
+        'hero-pattern': "url('/herocontainer.png')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      }
     },
   },
   plugins: [],

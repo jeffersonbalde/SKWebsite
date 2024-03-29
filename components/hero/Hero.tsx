@@ -7,7 +7,7 @@ const Hero = () => {
     <div className="hero-container h-screen w-full overflow-hidden">
       <div className="flex flex-col justify-center items-center gap-6 z-20">
         <motion.h1
-          className="font-normal text-xl lg:text-2xl"
+          className="font-normal text-lg lg:text-xl"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{
             opacity: 1,
@@ -16,7 +16,7 @@ const Hero = () => {
           }}
           viewport={{ once: true }}
         >
-          Welcome to the Website of
+          Welcome to the Official Website of
         </motion.h1>
         <div className="flex flex-col items-center gap-3 justify-center text-wrap text-center">
           <motion.h1

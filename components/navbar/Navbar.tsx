@@ -17,7 +17,7 @@ const Navbar = () => {
   };
   // backdrop-filter bg-opacity-30 backdrop-blur-lg border-b border border-gray-200
   return (
-    <div className="w-full text-color-black-grey fixed bg-color-white-smoke shadow-xl z-50 backdrop-filter bg-opacity-80 backdrop-blur-lg">
+    <div className="w-full text-color-black-grey fixed bg-color-white-smoke shadow-xl z-50 backdrop-filter backdrop-blur-lg">
       <div className="flex items-center justify-between h-full w-full px-4 md:px-14">
         <motion.div
           className=""
@@ -40,7 +40,7 @@ const Navbar = () => {
               <h1 className="font-bold text-sm md:text-lg">
                 SANGUNIANG KABATAAN
               </h1>
-              <h1 className="font-normal text-xs md:text-base">
+              <h1 className="font-semibold text-xs md:text-base">
                 Barangay Lumbia
               </h1>
             </div>
@@ -70,7 +70,7 @@ const Navbar = () => {
             viewport={{ once: true }}
           >
             <Link
-              href="/getintouch"
+              href="https://www.facebook.com/skbrgylumbia"
               className="ml-14 bg-color-blue text-color-white-smoke px-3 py-2 rounded-sm transition-all ease-in-out hover:bg-white hover:text-color-black-grey hover:shadow-2xl"
             >
               Get In Touch
@@ -120,12 +120,7 @@ const Navbar = () => {
                 Members
               </li>
             </Link>
-            <Link href="/faq">
-              <li onClick={() => setopenMenu(false)} className="py-5">
-                FAQ
-              </li>
-            </Link>
-            <Link href="/getintouch">
+            <Link href="https://www.facebook.com/skbrgylumbia">
               <li
                 onClick={() => setopenMenu(false)}
                 className="mt-5 bg-color-blue text-color-white-smoke px-3 py-2 rounded-sm"

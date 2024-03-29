@@ -54,16 +54,22 @@ const Chairwoman = () => {
           Diana Rose ‘Yan’ Duran
         </h1>
         <div className="font-medium">
-          <h2 className="text-base lg:text-lg leading-relaxed">
-            &quot;A true leader does not create separation, A true leader brings
-            people together.&quot; - Tendai Ruben Mbofana
+          <h2 className="text-base lg:text-lg leading-relaxed lowercase">
+            &quot;<span className="uppercase">T</span>HE GREATEST LEADER IS NOT
+            NECESSARILY THE ONE WHO DOES THE GREATEST THINGS.{" "}
+            <span className="uppercase">H</span>E IS THE ONE THAT GETS THE
+            PEOPLE TO DO THE GREATEST THINGS.&quot; -{" "}
+            <span className="uppercase">R</span>onald{" "}
+            <span className="uppercase">R</span>eagan
           </h2>
         </div>
         <div className="">
           <h1 className="font-medium text-base lg:text-lg leading-relaxed">
-            Barangay Captain Jeffrey P. Campaña, an accomplished advocate for
-            working people and a proud product of the District. Barangay Captain
-            Jeffrey P. Campaña started serving since 2013.
+            SK Chairwoman Diana Rose ‘Yan’ Duran, an esteemed advocate for the
+            welfare of working people, has been an integral part of our
+            district's growth and development. Her tireless dedication to
+            serving the community has left an indelible mark on the lives of
+            those she represents.
           </h1>
         </div>
         <Link href="https://www.facebook.com/skbrgylumbia" className="mt-4">
@@ -82,7 +88,7 @@ const Chairwoman = () => {
         </Link>
       </motion.div>
       <motion.div
-        className="absolute bottom-9 -z-40 left-10 lg:left-[44rem] lg:bottom-24"
+        className="absolute bottom-24 -z-40 left-10 lg:left-[44rem] lg:bottom-9"
         initial={{ opacity: 0, x: 20 }}
         whileInView={{
           opacity: 1,

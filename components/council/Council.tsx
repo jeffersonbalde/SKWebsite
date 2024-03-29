@@ -15,9 +15,9 @@ import Image from "next/image";
 
 const Council = () => {
   return (
-    <div className="council-container h-screen w-full overflow-hidden">
+    <div className="council-container h-screen w-full overflow-hidden bg-[##ffffff]">
       <motion.h1
-        className="text-3xl lg:text-5xl text-center mt-20 font-bold"
+        className="text-3xl lg:text-5xl text-center mt-20 font-bold text-color-dark-blue"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{
           opacity: 1,
@@ -47,12 +47,13 @@ const Council = () => {
           freeMode={true}
           pagination={{
             clickable: true,
+            // bulletClass: "custom-pagination-bullet"
           }}
           modules={[FreeMode, Pagination]}
-          className="mt-12 w-[40rem] md:w-[67rem]"
+          className="mt-12 w-[40rem] md:w-[67rem] mySwiper"
         >
           <SwiperSlide className="px-8">
-            <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center shadow-2xl bg-slate-50 rounded-lg">
+            <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center bg-slate-50 rounded-lg border border-slate-200">
               <Image
                 src="/diana.png"
                 alt="Diana Duran"
@@ -64,7 +65,7 @@ const Council = () => {
                 <h1 className="text-color-dark-blue text-2xl font-bold">
                   Diana Rose Duran
                 </h1>
-                <h1 className="text-color-dark-blue font-medium text-lg">
+                <h1 className="text-color-dark-blue font-semibold text-lg">
                   SK Chairwoman
                 </h1>
               </div>
@@ -83,7 +84,7 @@ const Council = () => {
                 <h1 className="text-color-dark-blue text-2xl font-bold">
                   Novem Rey Alao
                 </h1>
-                <h1 className="text-color-dark-blue font-medium text-lg">
+                <h1 className="text-color-dark-blue font-semibold text-lg">
                   SK Kagawad
                 </h1>
               </div>
@@ -102,7 +103,7 @@ const Council = () => {
                 <h1 className="text-color-dark-blue text-2xl font-bold">
                   Lawrence Lee Monsion
                 </h1>
-                <h1 className="text-color-dark-blue font-medium text-lg">
+                <h1 className="text-color-dark-blue font-semibold text-lg">
                   SK Kagawad
                 </h1>
               </div>
@@ -121,7 +122,7 @@ const Council = () => {
                 <h1 className="text-color-dark-blue text-2xl font-bold">
                   Jefferson Balde
                 </h1>
-                <h1 className="text-color-dark-blue font-medium text-lg">
+                <h1 className="text-color-dark-blue font-semibold text-lg">
                   SK Kagawad
                 </h1>
               </div>
@@ -130,7 +131,7 @@ const Council = () => {
           <SwiperSlide className="px-8">
             <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center shadow-2xl bg-slate-50 rounded-lg">
               <Image
-                src="/leandro.png"
+                src="/leandro3.png"
                 alt="Leandro Rolloque"
                 width={500}
                 height={500}
@@ -140,7 +141,7 @@ const Council = () => {
                 <h1 className="text-color-dark-blue text-2xl font-bold">
                   Leandro Rolloque
                 </h1>
-                <h1 className="text-color-dark-blue font-medium text-lg">
+                <h1 className="text-color-dark-blue font-semibold text-lg">
                   SK Kagawad
                 </h1>
               </div>
@@ -159,7 +160,7 @@ const Council = () => {
                 <h1 className="text-color-dark-blue text-2xl font-bold">
                   Krizza Bautista
                 </h1>
-                <h1 className="text-color-dark-blue font-medium text-lg">
+                <h1 className="text-color-dark-blue font-semibold text-lg">
                   SK Kagawad
                 </h1>
               </div>
@@ -178,7 +179,7 @@ const Council = () => {
                 <h1 className="text-color-dark-blue text-2xl font-bold">
                   Carlos John Luna
                 </h1>
-                <h1 className="text-color-dark-blue font-medium text-lg">
+                <h1 className="text-color-dark-blue font-semibold text-lg">
                   SK Kagawad
                 </h1>
               </div>
@@ -187,7 +188,7 @@ const Council = () => {
           <SwiperSlide className="px-8">
             <div className="w-80 h-[30rem] flex flex-col items-center gap-3 justify-center shadow-2xl bg-slate-50 rounded-lg">
               <Image
-                src="/linao.png"
+                src="/shane.png"
                 alt="Shane Linao"
                 width={500}
                 height={500}
@@ -197,7 +198,7 @@ const Council = () => {
                 <h1 className="text-color-dark-blue text-2xl font-bold">
                   Shane Linao
                 </h1>
-                <h1 className="text-color-dark-blue font-medium text-lg">
+                <h1 className="text-color-dark-blue font-semibold text-lg">
                   SK Kagawad
                 </h1>
               </div>
@@ -216,7 +217,7 @@ const Council = () => {
                 <h1 className="text-color-dark-blue text-2xl font-bold">
                   Edgar Boniel
                 </h1>
-                <h1 className="text-color-dark-blue font-medium text-lg">
+                <h1 className="text-color-dark-blue font-semibold text-lg">
                   SK Treasurer
                 </h1>
               </div>
@@ -235,7 +236,7 @@ const Council = () => {
                 <h1 className="text-color-dark-blue text-2xl font-bold">
                   Joshua Cabanes
                 </h1>
-                <h1 className="text-color-dark-blue font-medium text-lg">
+                <h1 className="text-color-dark-blue font-semibold text-lg">
                   SK Secretary
                 </h1>
               </div>

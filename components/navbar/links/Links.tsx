@@ -14,10 +14,6 @@ const Links = () => {
       title: "Members",
       path: "/members",
     },
-    {
-      title: "FAQ",
-      path: "/faq",
-    },
   ];
 
   return (

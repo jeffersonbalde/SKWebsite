@@ -39,16 +39,13 @@ const Footer = () => {
               <Link href="/">
                 <li>Home</li>
               </Link>
-              <Link href="/">
+              <Link href="/about">
                 <li>About</li>
               </Link>
-              <Link href="/">
+              <Link href="/members">
                 <li>Members</li>
               </Link>
-              <Link href="/">
-                <li>FAQ</li>
-              </Link>
-              <Link href="/">
+              <Link href="https://www.facebook.com/skbrgylumbia">
                 <li>Get In Touch</li>
               </Link>
             </ul>
