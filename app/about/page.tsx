@@ -7,16 +7,14 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/footer/Footer";
 
-import React from 'react'
-
 const aboutPage = () => {
-  const ref = React.useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"],
-  });
-  const imgScroll1 = useTransform(scrollYProgress, [0, 1], ["20%", "-20%"]);
-  const imgScroll2 = useTransform(scrollYProgress, [0, 1], ["100%", "50%"]);
+  // const ref = useRef(null);
+  // const { scrollYProgress } = useScroll({
+  //   target: ref,
+  //   offset: ["start end", "end start"],
+  // });
+  // const imgScroll1 = useTransform(scrollYProgress, [0, 1], ["20%", "-20%"]);
+  // const imgScroll2 = useTransform(scrollYProgress, [0, 1], ["100%", "50%"]);
   return (
     <div className="flex flex-col overflow-hidden">
       <div className="pt-[135px] lg:pt-[135px] bg-color-blue w-full py-9 lg:py-7 h-56">
@@ -43,7 +41,7 @@ const aboutPage = () => {
             transition: { delay: 0.4, duration: 0.7 },
           }}
           viewport={{ once: true }}
-          style={{ y: imgScroll1 }}
+          // style={{ y: imgScroll1 }}
         >
           <Image
             src="/dianaduran.png"
