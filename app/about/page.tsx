@@ -7,8 +7,10 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/footer/Footer";
 
+import React from 'react'
+
 const aboutPage = () => {
-  const ref = useRef(null);
+  const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "end start"],
