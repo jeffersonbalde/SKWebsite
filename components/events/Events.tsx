@@ -71,11 +71,12 @@ const Events = () => {
                     </h1>
                     <h1 className="font-medium z-50 text-base lg:text-2xl">
                       Our SK Council Takes Pride in Showcasing the Incredible
-                      Talents of Our Youth at Plaza Luz&apos;s Variety Show! From
-                      mesmerizing performances to awe-inspiring acts, our
+                      Talents of Our Youth at Plaza Luz&apos;s Variety Show!
+                      From mesmerizing performances to awe-inspiring acts, our
                       diverse and talented young individuals shined brightly,
                       captivating hearts and minds, and leaving an indelible
-                      mark of success on our community&apos;s cultural landscape.
+                      mark of success on our community&apos;s cultural
+                      landscape.
                     </h1>
                   </div>
                 </SwiperSlide>
@@ -111,6 +112,23 @@ const Events = () => {
                       mentors, they emerge as architects of transparency and
                       progress, upholding integrity, service, and excellence in
                       their roles.
+                    </h1>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="w-full h-[28rem] bg-slate-400 bg-womens-month bg-cover lg:bg-contain text-slate-50 flex flex-col justify-center items-center p-5 gap-5 bg-blend-darken lg:p-10 lg:px-24 text-center">
+                    <h1 className="font-medium z-50 text-sm lg:text-base">
+                      March 31, 2024
+                    </h1>
+                    <h1 className="font-bold z-50 text-2xl italic lg:text-5xl">
+                      Women's Month Celebration 2024
+                    </h1>
+                    <h1 className="font-medium z-50 text-base lg:text-2xl">
+                      We're thrilled to reflect on the resounding success of our
+                      Women's Month Celebration 2024 as a proud accomplishment
+                      within our SK team. This event stood as a testament to our
+                      commitment to recognizing and honoring the invaluable
+                      contributions of women in our community.
                     </h1>
                   </div>
                 </SwiperSlide>

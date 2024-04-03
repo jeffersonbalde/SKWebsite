@@ -22,6 +22,7 @@ module.exports = {
         'valentines': "url('/valentines.jpg')",
         'sk-training': "url('/sk-training.jpg')",
         'variety-show': "url('/variety-show.jpg')",
+        'womens-month': "url('/womensmonth.jpg')",
       }
     },
   },
