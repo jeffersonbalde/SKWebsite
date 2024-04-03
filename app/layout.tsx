@@ -12,9 +12,6 @@ export const metadata: Metadata = {
   title: "SK Lumbia, Pagadian City",
   description:
     "Official website of the SK Barangay Lumbia, Pagadian City, Zamboanga del Sur",
-  icons: {
-    icon: ["/sklogo.png"],
-  },
 };
 
 export default function RootLayout({
