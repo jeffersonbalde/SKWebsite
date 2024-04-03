@@ -121,11 +121,11 @@ const Events = () => {
                       March 31, 2024
                     </h1>
                     <h1 className="font-bold z-50 text-2xl italic lg:text-5xl">
-                      Women's Month Celebration 2024
+                      Women&apos;s Month Celebration 2024
                     </h1>
                     <h1 className="font-medium z-50 text-base lg:text-2xl">
-                      We're thrilled to reflect on the resounding success of our
-                      Women's Month Celebration 2024 as a proud accomplishment
+                      We&apos;re thrilled to reflect on the resounding success of our
+                      Women&apos;s Month Celebration 2024 as a proud accomplishment
                       within our SK team. This event stood as a testament to our
                       commitment to recognizing and honoring the invaluable
                       contributions of women in our community.
