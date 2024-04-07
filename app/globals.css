@@ -15,6 +15,7 @@ body {
 }
 
 .hero-container {
+  /* background-image: url("../public/herocontainer.png"); */
   background-image: url("../public/herocontainer.png");
   background-position: center;
   background-size: cover;

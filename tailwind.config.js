@@ -5,7 +5,7 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
 
-    // Or if using `src` directory:
+    // Or if using `src` directory
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -14,16 +14,16 @@ module.exports = {
         color: {
           "white-smoke": "#FAFAFA",
           "black-grey": "#2C2C2C",
-          "blue": "#10A9DF",
+          blue: "#10A9DF",
           "dark-blue": "#0E1F58",
         },
       },
       backgroundImage: {
-        'valentines': "url('/valentines.jpg')",
-        'sk-training': "url('/sk-training.jpg')",
-        'variety-show': "url('/variety-show.jpg')",
-        'womens-month': "url('/womensmonth.jpg')",
-      }
+        valentines: "url('/valentines.jpg')",
+        "sk-training": "url('/sk-training.jpg')",
+        "variety-show": "url('/variety-show.jpg')",
+        "womens-month": "url('/womensmonth.jpg')",
+      },
     },
   },
   plugins: [],
