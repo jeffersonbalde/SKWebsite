@@ -16,6 +16,7 @@ export default function Home() {
       <Events />
       <Location />
       <Footer />
+      
     </div>
   );
 }
